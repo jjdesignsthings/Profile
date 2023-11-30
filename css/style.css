@@ -41,6 +41,9 @@
         clip-path:polygon(0% 00%, 100% 0%, 100% 100%, 0% 100%);
     }
 }
+
+
+
 /* 공통 */
 .innerFrame{
     width: 1200px;
@@ -354,6 +357,7 @@ svg.on{
 
 .ct3-design{
     margin-top: 50px;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -369,12 +373,14 @@ svg.on{
     font-family: 'notoLightItalic';
     font-size: 25px;
     margin-bottom: 70px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .ct3-design figure{
     text-align: center;
     font-family: 'notoLightItalic';
-    font-size: 19px;
+    font-size: 22px;
 }
 
 .ct3-design figure>*{
@@ -448,8 +454,6 @@ svg.on{
     color: white;
 }
 
-
-
 .ct3-straCons2{
     position: relative;
     height: 500px;
@@ -462,11 +466,25 @@ svg.on{
     transform: translate(-200px, 200px);
 }
 
-.con3_oval{
-    width: 370px;
+
+.ct3-straCons2 span{
+    border: 1px solid #344ead;
+    border-radius: 25px;
+    font-family: "pfd-mi";
+    font-size: 25px;
+    padding: 5px 20px;
+}
+.ct3-straCons2 span:hover{
+    background: #344ead;
+    color: white;
+}
+
+
+.con3_subpage {
+    width: 570px;
     position: absolute;
     top: 185px;
-    left: 120px;
+    left: 55px;
     z-index: 10;
 }
 
@@ -539,7 +557,7 @@ svg.on{
 .ct4-textBox p{
     font-family: 'notoLightItalic';
     font-size: 20px;
-    margin-bottom: 30px;
+    margin: 25px;
     text-align: center;
     color: white;
 }
@@ -576,7 +594,7 @@ svg.on{
 
 .tabMenu dd{
     position: absolute;
-    top: 100px;
+    top: 139px;
     left: 50%;
     transform: translateX(-50%);
     width: 1500px;
@@ -591,7 +609,7 @@ svg.on{
     "item9 item10 item11 item12"
     "item13 item14 item15 item16"
     "item17 item18 item19 item19";
-    gap: 12px;
+    gap: 17px;
     
 }
 .tabMenu dd.popup{
@@ -677,6 +695,7 @@ svg.on{
 
 .popupDecor{
     background: url("../img/popupDecor.png") no-repeat 50% 50%;
+    animation: load 10s linear 0s infinite;
 }
 
 .tabMenu dd.popup section:nth-of-type(1){
@@ -776,12 +795,16 @@ svg.on{
 }
 .tabMenu dd.popup section:nth-of-type(19){
     grid-area: item19;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.tabMenu dd.popup section:nth-of-type(19) img{
+    height: 103%;
 }
 
 
 /* banner */
-
-
 
 .tabMenu dd.banner{
     grid-template-areas: 
@@ -795,21 +818,25 @@ svg.on{
 
 .bannerDecor{
     background: url("../img/bannerDecor.png") no-repeat 50% 50%;
+    animation: load 10s linear 0s infinite;
 }
 
 .tabMenu dd.banner section img{
     object-fit: cover;
 }
+
+.tabMenu dd.banner section{
+    color: white;
+    border-radius: 10px;
+}
+
 .tabMenu dd.banner section:nth-of-type(1){
     grid-area: item1;
-        border: 1px solid #797979;
-    border-radius: 10px;
-    color: white;
+    border: 1px solid #797979;
 
 }
 .tabMenu dd.banner section:nth-of-type(2){
     grid-area: item2;
-        border-radius: 10px;
     overflow: hidden;
 
 }
@@ -818,36 +845,26 @@ svg.on{
 }
 .tabMenu dd.banner section:nth-of-type(4){
     grid-area: item4;   
-    border: 1px solid #797979;
-    border-radius: 10px;
-    color: white;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 50px;
 }
 .tabMenu dd.banner section:nth-of-type(5){
     grid-area: item5;
-
 }
-
 .tabMenu dd.banner section:nth-of-type(6){
     grid-area: item6;
     border: 1px solid #797979;
-    border-radius: 10px;
-    color: white;
 }
 .tabMenu dd.banner section:nth-of-type(7){
     grid-area: item7;
-    border-radius: 10px;
     overflow: hidden;
 }
 
 .tabMenu dd.banner section:nth-of-type(8){
     grid-area: item8;
     border: 1px solid #797979;
-    border-radius: 10px;
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -861,14 +878,10 @@ svg.on{
 .tabMenu dd.banner section:nth-of-type(10){
     grid-area: item10;
     border: 1px solid #797979;
-    border-radius: 10px;
-
 }
-
 
 .tabMenu dd.banner section:nth-of-type(11){
     grid-area: item11;
-        border-radius: 10px;
     overflow: hidden;
 }
 
