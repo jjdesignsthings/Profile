@@ -9,7 +9,7 @@ $(document).ready(function(){
 
     // loading page
     setTimeout(function(){
-        $(".loadingPg").removeClass("on")
+        $(".loadingPg").addClass("on")
     },3333)
 
     

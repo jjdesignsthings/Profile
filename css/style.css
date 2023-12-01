@@ -51,18 +51,21 @@
 }
 
 /* 로딩 */
-.loadingPg{
-    /* display: flex; */
+.loadingPg {
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     width: 100%;
     background: #f2f1df;
-    display: none;
+    /* display: none; */
     /* background: #e5e5e5; */
+    overflow: hidden;
+    transition:all 1.2s ease 0s;
 }
 .loadingPg.on{
-    display: flex;
+    height:0vh;
+    /* display: flex; */
 }
 .loadingPg>img{
     animation: load 7s linear 0s infinite;
@@ -300,10 +303,14 @@ svg.on{
     opacity: 0;
     pointer-events: none;
     transition: all 0.5s ease 0s;
+
 }
 .projectList>ul>li{
     margin: 7px 0;
 }
+
+
+
 
 /* 컨텐트3 - project */
 .ct-intro{
@@ -380,11 +387,12 @@ svg.on{
 .ct3-design figure{
     text-align: center;
     font-family: 'notoLightItalic';
-    font-size: 22px;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 .ct3-design figure>*{
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 
@@ -479,7 +487,6 @@ svg.on{
     color: white;
 }
 
-
 .con3_subpage {
     width: 570px;
     position: absolute;
@@ -499,6 +506,7 @@ svg.on{
 }
 .con3_12lines{
     width: 750px;
+    border-radius: 100px;
 }
 
 .ct3-textBox-3{
@@ -737,6 +745,8 @@ svg.on{
 }
 .tabMenu dd.popup section:nth-of-type(8){
     grid-area: item8;
+    border-radius: 10px;
+    overflow: hidden;
 }
 .tabMenu dd.popup section:nth-of-type(9){
     grid-area: item9;
@@ -809,7 +819,7 @@ svg.on{
 .tabMenu dd.banner{
     grid-template-areas: 
     "item1 item2 item2 item2"
-    "item3 item4 item4 item5"
+    "item4 item4 item4 item5"
     "item6 item7 item7 item7"
     "item8 item8 item8 item9"
     "item10 item11 item11 item11"
